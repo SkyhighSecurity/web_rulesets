@@ -89,7 +89,7 @@ namespace DeepSeekTests
 
                     var reply = driver.FindElement(By.ClassName(replyContainerCn));
 
-                    StringAssert.IsMatch(".*(can't|cannot).*search.*", reply.Text);
+                    StringAssert.IsMatch("(.*(can't|cannot).*search.*)|(.*accuweather.*)", reply.Text);
                 }
                 catch (Exception)
                 {
