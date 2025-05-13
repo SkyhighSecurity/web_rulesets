@@ -38,7 +38,7 @@ It will also not block the generation and copying of the link into the clipboard
 You can use the "Block click to copy" rule to disable the copying to clipboard action (but that will also block any other click to copy functionality, for example for code blocks).
 You can also use the "Block unauthenticated chats" rule to block any unauthenticated chat requests so anything users might be able to share cannot contain sensitive information.
 
-
+<br/>
 
 ### Customizing Settings:
 
