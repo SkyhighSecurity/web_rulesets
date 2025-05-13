@@ -30,6 +30,7 @@ This rulesets provides rules for the following actions for the Perplexity Webser
 - Block unauthenticated chats (Web)
 
 <br/>
+
 ### Limitations
 
 The "Block Link Sharing" rule only works for blocking the sharing of chats of an authenticated user as chats of unauthenticated users are public by default and can be shared by just copying the link from the browser URL bar.
