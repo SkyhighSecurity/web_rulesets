@@ -31,6 +31,7 @@ This rulesets provides rules for the following actions for the Perplexity Webser
 
 <br/>
 ### Limitations
+
 The "Block Link Sharing" rule only works for blocking the sharing of chats of an authenticated user as chats of unauthenticated users are public by default and can be shared by just copying the link from the browser URL bar.
 It will also not block the generation and copying of the link into the clipboard as that happens locally. The rule only blocks the request to update the access configuration of the thread so that the generated link does not work.
 You can use the "Block click to copy" rule to disable the copying to clipboard action (but that will also block any other click to copy functionality, for example for code blocks).
