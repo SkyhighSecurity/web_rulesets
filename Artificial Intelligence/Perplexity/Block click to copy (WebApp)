@@ -1,0 +1,12 @@
+ROUTINE Block_click_to_copy_WebApp_ ON (Web.Response) [enabled="true",displayName="AI tests",prerun="false"] {
+	
+		IF MWG.SmartMatch (MWG.Url, "www.perplexity.ai") THEN {
+			STRING body = MWG.BodyData(MWG.Response()).ToString()
+			
+			body = ReplaceFirst(body, "<head>", "<head><script>navigator.clipboard.writeText = () => {return new Promise((resolve) => {})};</script>")
+			
+			DATAREF newBody = body.ToDataRef()
+		    MWG.SetBody(MWG.Response(), newBody)
+		}
+	
+	}
