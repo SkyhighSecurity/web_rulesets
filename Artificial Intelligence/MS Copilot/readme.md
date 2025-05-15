@@ -6,6 +6,10 @@
 - Select Criteria:
   URL is "copilot.cloud.microsoft"
   OR
+  URL is "copilot.microsoft.com"
+  OR
+  URL is "m365.cloud.microsoft/chat"
+  OR
   URL is "substrate.office.com"
   OR
   URL matches ```^https:\/\/graph\.microsoft\.com\/v1\.0\/me\/drive\/special\/copilotuploads:\/[^\/]*\/createUploadSession$```
