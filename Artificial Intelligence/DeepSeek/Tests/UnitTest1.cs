@@ -190,7 +190,8 @@ namespace DeepSeekTests
                         var sendButton = driver.FindElement(By.ClassName(sendPromptButtonCn));
                         sendButton.Click();
 
-                        var reply = driver.FindElement(By.ClassName(replyContainerCn));
+                        var replys = driver.FindElements(By.ClassName(replyContainerCn));
+                        var reply = replys.Last();
 
                         StringAssert.IsMatch(".*(can't|cannot|can not).*search.*", reply.Text);
                         return;
