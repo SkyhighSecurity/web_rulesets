@@ -183,7 +183,7 @@ namespace DeepSeekTests
                         authenticate(driver);
 
                         //TODO actually enable search in UI
-                        var searchButton = driver.FindElements(By.ClassName("_3172d9f"))[1];
+                        var searchButton = driver.FindElements(By.ClassName("_6dbc175"))[1];
                         searchButton.Click();
                         var textArea = driver.FindElement(By.ClassName(inputCN));
                         textArea.SendKeys(searchPrompt);
@@ -314,7 +314,8 @@ namespace DeepSeekTests
                         var sendButton = driver.FindElement(By.ClassName(sendPromptButtonCn));
                         sendButton.Click();
 
-                        var reply = driver.FindElement(By.ClassName(replyContainerCn));
+                        var replys = driver.FindElements(By.ClassName(replyContainerCn));
+                        var reply = replys.Last();
                         Assert.That(reply.Text, Is.EqualTo(policyWarning));
                         return;
                     }
