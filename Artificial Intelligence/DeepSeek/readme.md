@@ -7,7 +7,7 @@
 | Enforce Search Setting (WebApp) | :white_check_mark: |
 | Prevent pasting from clipboard (WebApp) | :white_check_mark: |
 | Replace prompt (WebApp) | :white_check_mark: |
-Last update: Fri, 21 Nov 2025 18:10:44 GMT
+Last update: Sat, 22 Nov 2025 00:08:17 GMT
 <!--Tests:End-->
 ### Setup
 
@@ -77,6 +77,7 @@ Rule: Replace prompt (API)
 Adjust variable "maxPromptLength" based on your requirements
 
 Remove entries for roles for that you do NOT want to replace the prompt for from the "limitedRoles" variable
+
 
 
 
