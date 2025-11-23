@@ -1,13 +1,13 @@
 <!--Tests:Start-->
 | Test case | Result |
 | --- | --- |
-| _greenField_Prevent pasting from clipboard (WebApp) | :white_check_mark: |
+| _greenField_Prevent pasting from clipboard (WebApp) | :x: |
 | Block File Upload (WebApp) | :white_check_mark: |
-| Enforce DeepThink Setting (WebApp) | :white_check_mark: |
-| Enforce Search Setting (WebApp) | :white_check_mark: |
-| Prevent pasting from clipboard (WebApp) | :white_check_mark: |
-| Replace prompt (WebApp) | :white_check_mark: |
-Last update: Sun, 23 Nov 2025 06:08:00 GMT
+| Enforce DeepThink Setting (WebApp) | :x: |
+| Enforce Search Setting (WebApp) | :x: |
+| Prevent pasting from clipboard (WebApp) | :x: |
+| Replace prompt (WebApp) | :x: |
+Last update: Sun, 23 Nov 2025 12:18:17 GMT
 <!--Tests:End-->
 ### Setup
 
@@ -77,6 +77,7 @@ Rule: Replace prompt (API)
 Adjust variable "maxPromptLength" based on your requirements
 
 Remove entries for roles for that you do NOT want to replace the prompt for from the "limitedRoles" variable
+
 
 
 
